@@ -1,12 +1,3 @@
-<<<<<<< Updated upstream
-import React from 'react'
-
-const Navbar = () => {
-  return (
-    <div>Navbar</div>
-  )
-}
-=======
 "use client";
 
 import {
@@ -106,6 +97,5 @@ const Navbar = () => {
     </div>
   );
 };
->>>>>>> Stashed changes
 
-export default Navbar
+export default Navbar;
