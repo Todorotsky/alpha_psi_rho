@@ -35,7 +35,7 @@ function onNavChange() {
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between p-4 pr-16 shadow-sm --tw-shadow-color: #FFD700">
+    <div className="flex justify-between items-center w-full h-full px-2 shadow-sm">
       <Link href="/" className="flex items-center">
         <Image
           src="/Apsirhocrest.jpeg"
@@ -43,7 +43,7 @@ const Navbar = () => {
           height={60}
           alt="Apsirho Crest"
         />
-        <div className="leading-none font-bold text-xl">
+        <div className="leading-none font-bold text-xl ml-2">
           <h1>
             Alpha Psi Rho
             <br />
@@ -51,7 +51,7 @@ const Navbar = () => {
           </h1>
         </div>
       </Link>
-      {
+      <div>
         <NavigationMenu onValueChange={onNavChange} className="hidden md:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
@@ -104,6 +104,9 @@ const Navbar = () => {
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Fam Tree
                 </NavigationMenuLink>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  Highlights
+                </NavigationMenuLink>
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
@@ -128,9 +131,9 @@ const Navbar = () => {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-      }
+      </div>
       <div className="md:hidden">
-        <AiOutlineMenu />
+        <AiOutlineMenu size={45} />
       </div>
     </div>
   );
