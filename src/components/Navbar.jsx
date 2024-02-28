@@ -39,7 +39,9 @@ const Navbar = () => {
               About
             </NavigationMenuTrigger>
             <NavigationMenuContent>
-              <NavigationMenuLink asChild>Mission Statement</NavigationMenuLink>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Link
+              </NavigationMenuLink>
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
