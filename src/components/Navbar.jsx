@@ -1,22 +1,13 @@
 "use client";
 
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
+import React from "react";
 import Image from "next/image";
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
+  NavbarMenuToggle,
   Link,
   Button,
   DropdownItem,
@@ -30,6 +21,7 @@ const Navigationbar = () => {
   const icons = {
     chevron: <ChevronDown fill="currentColor" size={16} />,
   };
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
     <Navbar
       className="w-[72%] ml-[14%] mr-[14%] flex justify-start"
