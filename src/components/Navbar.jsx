@@ -36,8 +36,8 @@ const Navigationbar = () => {
       isBlurred="false"
       maxWidth={"full"}
     >
-      <NavbarBrand>
-        <div className="flex justify-between p-4 pr-16 w-[72%]">
+      <NavbarBrand justify="start">
+        <div>
           <Link href="/" className="flex items-center">
             <div>
               <Image
@@ -57,7 +57,7 @@ const Navigationbar = () => {
           </Link>
         </div>
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden sm:flex gap-8" justify="end">
         <Dropdown>
           <NavbarItem>
             <DropdownTrigger>
@@ -121,12 +121,14 @@ const Navigationbar = () => {
             <DropdownItem
               key="APsiRho101"
               startContent={icons.scale}
+              description="Powerpoint About APsiRho"
               href="/about"
             >
               APsiRho101
             </DropdownItem>
             <DropdownItem
               key="How to Join"
+              description="How-To and Requirements"
               startContent={icons.scale}
               href="/join"
             >
@@ -134,6 +136,7 @@ const Navigationbar = () => {
             </DropdownItem>
             <DropdownItem
               key="Interest Form"
+              description="Google Form"
               startContent={icons.scale}
               href="https://docs.google.com/forms/d/e/1FAIpQLSeE7k9E0oweC9APcmSWvnFHIo9nQ2WiD0H3aYQRySa7lg3ATw/viewform"
             >
@@ -230,6 +233,7 @@ const Navigationbar = () => {
         <Link className="text-2xl" href="/contact" aria-current="page">
           Contact
         </Link>
+
         <Button
           as={Link}
           color="primary"
