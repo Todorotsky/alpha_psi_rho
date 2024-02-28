@@ -14,9 +14,26 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
+function onNavChange() {
+  setTimeout(() => {
+    const triggers = document.querySelectorAll(
+      '.submenu-trigger[data-state="open"]'
+    );
+    if (triggers.length === 0) return;
+
+    const firstTrigger =
+      triggers[0] instanceof HTMLElement ? triggers[0] : null;
+
+    document.documentElement.style.setProperty(
+      "--menu-left-position",
+      `${firstTrigger.offsetLeft}px`
+    );
+  });
+}
+
 const Navbar = () => {
   return (
-    <div className="flex justify-between p-4 pr-16">
+    <div className="flex justify-between p-4 pr-16 w-[72%] mx-auto">
       <Link href="/" className="flex items-center">
         <Image
           src="/Apsirhocrest.jpeg"
@@ -32,10 +49,10 @@ const Navbar = () => {
           </h1>
         </div>
       </Link>
-      <NavigationMenu>
+      <NavigationMenu onValueChange={onNavChange}>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-2xl">
+            <NavigationMenuTrigger className="text-2xl submenu-trigger">
               About
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -45,7 +62,7 @@ const Navbar = () => {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-2xl">
+            <NavigationMenuTrigger className="text-2xl submenu-trigger">
               Join Us
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -55,7 +72,7 @@ const Navbar = () => {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-2xl">
+            <NavigationMenuTrigger className="text-2xl submenu-trigger">
               News
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -65,7 +82,7 @@ const Navbar = () => {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-2xl">
+            <NavigationMenuTrigger className="text-2xl submenu-trigger">
               Brhothers
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -75,7 +92,7 @@ const Navbar = () => {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-2xl">
+            <NavigationMenuTrigger className="text-2xl submenu-trigger">
               Media
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -85,7 +102,7 @@ const Navbar = () => {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-2xl">
+            <NavigationMenuTrigger className="text-2xl submenu-trigger">
               Contact
             </NavigationMenuTrigger>
             <NavigationMenuContent>
