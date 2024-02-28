@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
+    <main className="w-[72%] mx-auto">
       <div>
         <ImageWithOverlay
           imageUrl="/first_hero_picture.jpg"
@@ -12,15 +12,15 @@ export default function Home() {
           centerText="The premier Asian-Pacific Islander Interest Fraternity of UNLV"
         />
       </div>
-      <div className="static">
+      <div className="static pb-12">
         <div className="flex justify-center py-10 font-bold text-5xl">
-          <div>
+          <div className="text-[4vw]">
             What We Offer <br />
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="bg-gray-200 w-1/4 h-64 m-4 flex justify-center">
-            <div className="text-center font-bold text-3xl pt-7">
+          <div className="bg-gray-200 w-[33%] h-[30%] m-4 flex justify-center">
+            <div className="text-center font-bold text-[1.9vw] pt-7">
               {" "}
               Academics{" "}
               <div className="pt-2 flex space-evenly justify-center">
@@ -39,15 +39,15 @@ export default function Home() {
                   alt="Academic Graphic"
                 />
               </div>
-              <div className="font-normal text-base pt-4 px-1">
+              <div className="font-normal text-base py-4 px-1 overflow-auto">
                 • Access to brhothers who can offer advice, share experiences,
                 and provide resources to help you excel in your studies and
                 beyond.
               </div>
             </div>
           </div>
-          <div className="bg-gray-200 w-1/4 h-64 m-4 flex justify-center">
-            <div className="text-center font-bold text-3xl pt-7">
+          <div className="bg-gray-200 w-[33%] h-[30%] m-4 flex justify-center">
+            <div className="text-center font-bold text-[1.9vw] pt-7">
               {" "}
               Brotherhood{" "}
               <div className="pt-2 flex space-evenly justify-center">
@@ -66,16 +66,17 @@ export default function Home() {
                   alt="Brotherhood Graphic"
                 />
               </div>
-              <div className="font-normal text-base pt-4 px-1">
+              <div className="font-normal text-base py-4 px-1 overflow-auto">
                 • Join a tight-knit community where bonds last a lifetime,
                 creating a sense of belonging and camaraderie that extends far
                 beyond your college years.
               </div>
             </div>
           </div>
-          <div className="bg-gray-200 w-1/4 h-64 m-4 flex justify-center">
-            <div className="text-center font-bold text-3xl pt-7">
-              Prosperity and Strength
+          <div className="bg-gray-200 w-[33%] h-[30%] m-4 flex justify-center">
+            <div className="text-center font-bold text-[1.9vw] pt-7">
+              {" "}
+              Prosperity and Strength{" "}
               <div className="pt-2 flex space-evenly justify-center">
                 <Image
                   className="mr-4"
@@ -87,12 +88,12 @@ export default function Home() {
                 <Image
                   className="ml-4"
                   src="/strength.svg"
-                  width={75}
-                  height={75}
+                  width={70}
+                  height={70}
                   alt="Strength Written in Mandarin"
                 />
               </div>
-              <div className="font-normal text-base pt-4 px-1">
+              <div className="font-normal text-base py-4 px-1 overflow-auto">
                 • Challenge yourself to step out of your comfort zone, explore
                 new interests, and discover your potential in a supportive and
                 empowering environment.
@@ -100,6 +101,14 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="bg-[#09243F] flex items-center justify-between text-white py-11">
+        <div>
+          <video className="w-[45%] h-[30%] pl-[6vb]" controls>
+            <source src="/spring2024_rush.mp4" type="video/mp4"></source>
+          </video>
+        </div>
+        <div>Who We Are</div>
       </div>
     </main>
   );
