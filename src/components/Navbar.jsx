@@ -42,12 +42,12 @@ const Navigationbar = () => {
             <div>
               <Image
                 src="/Apsirhocrest.jpeg"
-                width={30}
-                height={30}
+                width={40}
+                height={40}
                 alt="Apsirho Crest"
               />
             </div>
-            <div className="leading-none font-bold text-xl">
+            <div className="leading-none font-bold text-2xl">
               <h1>
                 Alpha Psi Rho
                 <br />
@@ -57,13 +57,13 @@ const Navigationbar = () => {
           </Link>
         </div>
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-8" justify="end">
+      <NavbarContent className="hidden sm:flex gap-8" justify="center">
         <Dropdown>
           <NavbarItem>
             <DropdownTrigger>
               <Button
                 disableRipple
-                className="text-2xl p-0 bg-transparent data-[hover=true]:bg-transparent"
+                className="text-3xl p-0 bg-transparent data-[hover=true]:bg-transparent"
                 endContent={icons.chevron}
                 radius="sm"
                 variant="light"
@@ -102,7 +102,7 @@ const Navigationbar = () => {
             <DropdownTrigger>
               <Button
                 disableRipple
-                className="text-2xl p-0 bg-transparent data-[hover=true]:bg-transparent"
+                className="text-3xl p-0 bg-transparent data-[hover=true]:bg-transparent"
                 endContent={icons.chevron}
                 radius="sm"
                 variant="light"
@@ -149,7 +149,7 @@ const Navigationbar = () => {
             <DropdownTrigger>
               <Button
                 disableRipple
-                className="text-2xl p-0 bg-transparent data-[hover=true]:bg-transparent"
+                className="text-3xl p-0 bg-transparent data-[hover=true]:bg-transparent"
                 endContent={icons.chevron}
                 radius="sm"
                 variant="light"
@@ -196,7 +196,7 @@ const Navigationbar = () => {
             <DropdownTrigger>
               <Button
                 disableRipple
-                className="text-2xl p-0 bg-transparent data-[hover=true]:bg-transparent"
+                className="text-3xl p-0 bg-transparent data-[hover=true]:bg-transparent"
                 endContent={icons.chevron}
                 radius="sm"
                 variant="light"
@@ -230,12 +230,14 @@ const Navigationbar = () => {
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>
-        <Link className="text-2xl" href="/contact" aria-current="page">
+        <Link className="text-3xl" href="/contact" aria-current="page">
           Contact
         </Link>
-
+      </NavbarContent>
+      <NavbarContent justify="end">
         <Button
           as={Link}
+          className="text-2xl"
           color="primary"
           href="https://docs.google.com/forms/d/e/1FAIpQLSeE7k9E0oweC9APcmSWvnFHIo9nQ2WiD0H3aYQRySa7lg3ATw/viewform"
           variant="flat"
