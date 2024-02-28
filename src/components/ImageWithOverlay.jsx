@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const ImageWithOverlay = ({
   imageUrl,
@@ -8,19 +9,27 @@ const ImageWithOverlay = ({
 }) => {
   return (
     <div className="relative">
-      <img src={imageUrl} alt="Image" className="w-full" />
-      <div className="absolute top-0 right-0 mr-6 mt-6">
-        <div className="relative bg-black bg-opacity-50 rounded-full w-61p h-92p md:w-61p md:h-92p flex flex-col items-center justify-start p-6">
-          <div className="mb-6">
-            <span className="text-white text-5xl font-bold">{headerText}</span>
+      <Image
+        src={imageUrl}
+        alt="Image"
+        width={1920}
+        height={1280}
+        className="w-full"
+      />
+      <div className="absolute right-0 bottom-[8%] mr-14 mt-6 w-[61%] h-[92%] justify-center">
+        <div className="bg-black bg-opacity-50 rounded-full w-61p h-[92%] flex flex-col items-center p-[1vh]">
+          <div className="mt-[1vw] mb-[-1vw]">
+            <span className="text-white text-[5vw] font-bold">
+              {headerText}
+            </span>
           </div>
-          <div className="mb-6">
-            <span className="text-white text-4xl font-semibold">
+          <div className="mb-[8vw]">
+            <span className="text-white text-[4vw] font-semibold align-top">
               {subheaderText}
             </span>
           </div>
-          <div>
-            <span className="text-white text-lg font-semibold">
+          <div className="text-center">
+            <span className="text-white text-[3vw] font-semibold text-center">
               {centerText}
             </span>
           </div>
