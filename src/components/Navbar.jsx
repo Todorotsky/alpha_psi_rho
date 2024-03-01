@@ -24,7 +24,7 @@ const Navigationbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
     <Navbar
-      className="w-[72%] ml-[14%] mr-[14%] flex justify-start"
+      className="w-[100%] sm:w-[72%] ml-0 mr-0 sm:ml-[14%] sm:mr-[14%] flex justify-start"
       isBlurred="false"
       maxWidth={"full"}
     >
