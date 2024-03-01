@@ -1,6 +1,6 @@
 import ImageWithOverlay from "../components/ImageWithOverlay";
 import Image from "next/image";
-
+import { Link, Button } from "@nextui-org/react";
 export default function Home() {
   return (
     <main className="w-full sm:w-[72%] mx-auto">
@@ -13,14 +13,14 @@ export default function Home() {
         />
       </div>
       <div className="static pb-12">
-        <div className="flex justify-center py-10 font-bold text-5xl">
-          <div className="text-3xl sm:text-[4vw]">
+        <div className="flex justify-center py-6 sm:py-10 font-bold text-5xl">
+          <div className="text-4xl sm:text-[4vw]">
             What We Offer <br />
           </div>
         </div>
         <div className="flex flex-wrap sm:justify-center">
           <div className="bg-gray-200 w-full sm:w-[33%] h-[30%] m-4 flex justify-center">
-            <div className="text-center font-bold text-[1.9vw] pt-7">
+            <div className="text-center font-bold text-2xl sm:text-[1.9vw] pt-7">
               Academics
               <div className="pt-2 flex space-evenly justify-center">
                 <Image
@@ -31,7 +31,7 @@ export default function Home() {
                   alt="Academics Written in Tagalog"
                 />
                 <Image
-                  className="hidden sm:ml-4"
+                  className="ml-4"
                   src="/academic_2.svg"
                   width={75}
                   height={75}
@@ -46,7 +46,7 @@ export default function Home() {
             </div>
           </div>
           <div className="bg-gray-200 w-full sm:w-[33%] h-[30%] m-4 flex justify-center ">
-            <div className="text-center font-bold text-[1.9vw] pt-7">
+            <div className="text-center font-bold text-2xl sm:text-[1.9vw] pt-7">
               Brotherhood
               <div className="pt-2 flex space-evenly justify-center">
                 <Image
@@ -57,7 +57,7 @@ export default function Home() {
                   alt="Brotherhood Written in Japanese"
                 />
                 <Image
-                  className="hidden sm:ml-4"
+                  className="sm:ml-4"
                   src="/brotherhood_2.svg"
                   width={75}
                   height={75}
@@ -72,9 +72,8 @@ export default function Home() {
             </div>
           </div>
           <div className="bg-gray-200 w-full sm:w-[33%] h-[30%] m-4 flex justify-center">
-            <div className="text-center font-bold text-[1.9vw] pt-7">
-              {" "}
-              Prosperity and Strength{" "}
+            <div className="text-center font-bold text-2xl sm:text-[1.9vw] pt-7">
+              Prosperity and Strength
               <div className="pt-2 flex space-evenly justify-center">
                 <Image
                   className="mr-4"
@@ -100,13 +99,52 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="bg-[#09243F] flex items-center justify-between text-white py-11">
-        <div>
-          <video className="w-[45%] h-[30%] pl-[6vb]" controls>
-            <source src="/spring2024_rush.mp4" type="video/mp4"></source>
-          </video>
+        <div className="sm:hidden flex flex-col">
+          <div className="text-center text-4xl pb-4 font-bold">Who We Are</div>
+          <div>
+            <video className="w-full sm:w-[45%] h-[30%] px-5" controls>
+              <source src="/spring2024_rush.mp4" type="video/mp4"></source>
+            </video>
+          </div>
+          <div className="pt-3 px-5">
+            <p className="py-3">
+              Alpha Psi Rho (ΑΨΡ, also known as APsiRho) is an Asian/Pacific
+              Islander-Interest Fraternity. Alpha Psi Rho is a part of the
+              Multicultural Greek Council at UNLV. Although we are an
+              Asian-Pacific Islander Interest Fraternity, we are all inclusive.
+            </p>
+
+            <p>
+              Click the button below to view a powerpoint presentation to learn
+              what this fraternity is about. APSiRho 101 covers both the
+              business and social aspects of what it means to be a part of Alpha
+              Psi Rho.
+            </p>
+          </div>
+          <div className="pt-4 flex justify-center">
+            <Button
+              as={Link}
+              className="text-2xl font-bold w-[70%]"
+              color="primary"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeE7k9E0oweC9APcmSWvnFHIo9nQ2WiD0H3aYQRySa7lg3ATw/viewform"
+              variant="flat"
+              style={{ backgroundColor: "#FFD700", color: "black" }}
+            >
+              APSIRHO101
+            </Button>
+          </div>
         </div>
-        <div>Who We Are</div>
+
+        <div className="hidden sm:block">
+          <div>
+            <video className="w-[45%] h-[30%] pl-[6vb]" controls>
+              <source src="/spring2024_rush.mp4" type="video/mp4"></source>
+            </video>
+          </div>
+          Who We Are
+        </div>
       </div>
     </main>
   );
