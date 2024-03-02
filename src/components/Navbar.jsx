@@ -27,7 +27,7 @@ const Navigationbar = () => {
 
   return (
     <Navbar
-      className="w-[100%] sm:w-[72%] ml-0 mr-0 sm:ml-[14%] sm:mr-[14%] flex justify-start"
+      className="max-w-full sm:max-w-[72%] mx-auto flex justify-center"
       isBlurred="false"
       maxWidth={"full"}
     >
@@ -56,13 +56,7 @@ const Navigationbar = () => {
                 About
               </Button>
             </DropdownTrigger>
-            <DropdownMenu
-              aria-label="About Us"
-              className="w-[100%]"
-              itemClasses={{
-                base: "gap-4",
-              }}
-            >
+            <DropdownMenu aria-label="About Us" className="w-[100%]">
               <DropdownItem
                 key="About Us"
                 description="Pillars and Mission Statement"
@@ -82,7 +76,7 @@ const Navigationbar = () => {
             </DropdownMenu>
           </Dropdown>
           <Dropdown>
-            <NavbarMenuItem className="pt-2">
+            <NavbarMenuItem className="pt-3">
               <DropdownTrigger>
                 <Button
                   disableRipple
@@ -95,13 +89,7 @@ const Navigationbar = () => {
                 </Button>
               </DropdownTrigger>
             </NavbarMenuItem>
-            <DropdownMenu
-              aria-label="Join Us"
-              className="w-[100%]"
-              itemClasses={{
-                base: "gap-4",
-              }}
-            >
+            <DropdownMenu aria-label="Join Us" className="w-[100%]">
               <DropdownItem
                 key="APsiRho101"
                 startContent={icons.scale}
@@ -130,15 +118,106 @@ const Navigationbar = () => {
           </Dropdown>
         </NavbarMenuItem>
         <NavbarMenuItem className="pt-2">
+          <Dropdown>
+            <NavbarItem>
+              <DropdownTrigger>
+                <Button
+                  disableRipple
+                  className="text-3xl p-0 bg-transparent data-[hover=true]:bg-transparent"
+                  endContent={icons.chevron}
+                  radius="sm"
+                  variant="light"
+                >
+                  Brhothers
+                </Button>
+              </DropdownTrigger>
+            </NavbarItem>
+            <DropdownMenu aria-label="Join Us" className="w-[100%]">
+              <DropdownItem
+                key="Brhothers"
+                description="Classes and Brhothers"
+                startContent={icons.scale}
+                href="/brhothers"
+              >
+                Brhothers
+              </DropdownItem>
+              <DropdownItem
+                key="Fam Tree"
+                description="Big Brho Fam Tree"
+                startContent={icons.scale}
+                href="/brhothers"
+              >
+                Fam Tree
+              </DropdownItem>
+              <DropdownItem
+                key="Highlights"
+                description="Promotion Hub of Brhos"
+                startContent={icons.scale}
+                href="/brhothers"
+              >
+                Highlights
+              </DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+        </NavbarMenuItem>
+        <Dropdown>
+          <NavbarMenuItem className="pt-2">
+            <DropdownTrigger>
+              <Button
+                disableRipple
+                className="text-3xl p-0 bg-transparent data-[hover=true]:bg-transparent"
+                endContent={icons.chevron}
+                radius="sm"
+                variant="light"
+              >
+                Media
+              </Button>
+            </DropdownTrigger>
+          </NavbarMenuItem>
+          <DropdownMenu aria-label="Media" className="w-[100%]">
+            <DropdownItem
+              key="Gallery"
+              description="Instagram Photos"
+              startContent={icons.scale}
+              href="/media"
+            >
+              Gallery
+            </DropdownItem>
+            <DropdownItem
+              key="Videos"
+              description="Promos and Rush"
+              startContent={icons.scale}
+              href="/brhothers"
+            >
+              Videos
+            </DropdownItem>
+          </DropdownMenu>
+        </Dropdown>
+        <NavbarMenuItem className="pt-2">
           <Link className="text-3xl" href="/contact" aria-current="page">
             Contact
           </Link>
         </NavbarMenuItem>
+        <NavbarMenuItem className="pt-5">
+          <Button
+            as={Link}
+            className="text-2xl"
+            color="primary"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeE7k9E0oweC9APcmSWvnFHIo9nQ2WiD0H3aYQRySa7lg3ATw/viewform"
+            variant="flat"
+            style={{ backgroundColor: "#09243F", color: "white" }}
+          >
+            Interest Form
+          </Button>
+        </NavbarMenuItem>
       </NavbarMenu>
 
-      <NavbarBrand justify="start">
+      <NavbarBrand className="flex justify-center">
         <div>
-          <Link href="/" className="flex items-center">
+          <Link
+            href="/"
+            className="absolute top-0 left-1/2 transform -translate-x-1/2 sm:static sm:top-auto sm:left-auto sm:transform-none"
+          >
             <div>
               <Image
                 src="/Apsirhocrest.jpeg"
@@ -254,7 +333,7 @@ const Navigationbar = () => {
                 radius="sm"
                 variant="light"
               >
-                Brhothers{" "}
+                Brhothers
               </Button>
             </DropdownTrigger>
           </NavbarItem>
@@ -334,7 +413,7 @@ const Navigationbar = () => {
           Contact
         </Link>
       </NavbarContent>
-      <NavbarContent justify="end">
+      <NavbarContent className="justify-end hidden sm:flex">
         <Button
           as={Link}
           className="text-2xl"
