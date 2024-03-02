@@ -103,13 +103,17 @@ export default function Home() {
 
       <div className="bg-[#09243F] flex items-center justify-between text-white py-11">
         <div className="sm:hidden flex flex-col">
-          <div className="text-center text-4xl pb-4 font-bold">Who We Are</div>
+          <div className="text-center text-4xl pb-4 font-bold">RUSH RHO</div>
           <div>
             <video className="w-full sm:w-[45%] h-[30%] px-5" controls>
               <source src="/spring2024_rush.mp4" type="video/mp4"></source>
             </video>
           </div>
           <div className="pt-3 px-5">
+            <div className="text-center text-4xl pb-4 font-bold">
+              Who We Are
+            </div>
+
             <p className="py-3">
               Alpha Psi Rho (ΑΨΡ, also known as APsiRho) is an Asian/Pacific
               Islander-Interest Fraternity. Alpha Psi Rho is a part of the
