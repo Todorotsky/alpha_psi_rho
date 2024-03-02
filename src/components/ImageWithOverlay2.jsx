@@ -31,7 +31,7 @@ const ImageWithOverlay2 = ({ imageUrl, headerText, subheaderText, link }) => {
               color="primary"
               href={link}
               variant="flat"
-              style={{ backgroundColor: "#09243F", color: "white" }}
+              style={{ backgroundColor: "#FFD700", color: "black" }}
             >
               Interest Form
             </Button>
