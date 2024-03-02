@@ -1,4 +1,5 @@
 import ImageWithOverlay from "../components/ImageWithOverlay";
+import ImageWithOverlay2 from "../components/ImageWithOverlay2";
 import Image from "next/image";
 import { Link, Button } from "@nextui-org/react";
 export default function Home() {
@@ -145,6 +146,14 @@ export default function Home() {
           </div>
           Who We Are
         </div>
+      </div>
+      <div className="py-6">
+        <ImageWithOverlay2
+          imageUrl="/second_hero_picture.jpg"
+          headerText="Want to Rush?"
+          subheaderText="Sign our interest form and come out to the rush events at the start of the semester!"
+          link="https://docs.google.com/forms/d/e/1FAIpQLSeE7k9E0oweC9APcmSWvnFHIo9nQ2WiD0H3aYQRySa7lg3ATw/viewform"
+        />
       </div>
     </main>
   );
