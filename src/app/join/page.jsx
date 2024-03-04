@@ -13,16 +13,16 @@ const JoinPage = () => {
           <div className="font-bold">
             <div className="my-4">
               <p>
-                Recruitment, also known as "Rush", is a short period of time at
-                the start of the semester where fraternities host fun events for
-                you to get to know the brhothers of the fraternity. Our Rush
-                events usually happen 2-3 weeks since the start of the semester.
-                These events are for potential members to get to know the
-                Brotherhood before they make their decision whether or not the
-                Fraternity is right for them. Bonfire is our most popular event
-                where you can talk to the brhos and enjoy good food. There is no
-                obligation for you to join Alpha Psi Rho if you attend any of
-                our Rush events.
+                Recruitment, also known as &quot;Rush&quot;, is a short period
+                of time at the start of the semester where fraternities host fun
+                events for you to get to know the brhothers of the fraternity.
+                Our Rush events usually happen 2-3 weeks since the start of the
+                semester. These events are for potential members to get to know
+                the Brotherhood before they make their decision whether or not
+                the Fraternity is right for them. Bonfire is our most popular
+                event where you can talk to the brhos and enjoy good food. There
+                is no obligation for you to join Alpha Psi Rho if you attend any
+                of our Rush events.
               </p>
             </div>
             <div className="my-4">
@@ -35,7 +35,7 @@ const JoinPage = () => {
               Follow our Instagram:
               <a
                 href="https://www.instagram.com/unlvapsirho/"
-                className=" bg-yellow-300"
+                className="bg-yellow-300"
               >
                 {" "}
                 @unlvapsirho{" "}
