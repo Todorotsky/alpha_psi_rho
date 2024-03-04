@@ -49,7 +49,10 @@ const JoinPage = () => {
               <div className="my-4">
                 <ul>
                   <li>• Must be a UNLV student of good standing </li>
-                  <li>• Have at least a 2.5 GPA Cumulative and Semester </li>
+                  <li>
+                    • Have at least a 2.5 GPA <span>(</span>Cumulative and
+                    Semester <span>)</span>
+                  </li>
                   <li>
                     • Must attend APsiRho 101 and at least two rush events
                   </li>
