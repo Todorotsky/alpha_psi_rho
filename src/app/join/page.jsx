@@ -17,7 +17,8 @@ const JoinPage = () => {
                 of time at the start of the semester where fraternities host fun
                 events for you to get to know the brhothers of the fraternity.
                 Our Rush events usually happen 2-3 weeks since the start of the
-                semester. These events are for potential members to get to know
+                semester. All our events are free and we will cover any food
+                expenses. These events are for potential members to get to know
                 the Brotherhood before they make their decision whether or not
                 the Fraternity is right for them. Bonfire is our most popular
                 event where you can talk to the brhos and enjoy good food. There
