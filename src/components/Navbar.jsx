@@ -179,7 +179,7 @@ const Navigationbar = () => {
               key="Gallery"
               description="Instagram Photos"
               startContent={icons.scale}
-              href="/media"
+              href="/media/gallery"
             >
               Gallery
             </DropdownItem>
@@ -187,7 +187,7 @@ const Navigationbar = () => {
               key="Videos"
               description="Promos and Rush"
               startContent={icons.scale}
-              href="/brhothers"
+              href="/media/videos"
             >
               Videos
             </DropdownItem>
@@ -395,7 +395,7 @@ const Navigationbar = () => {
               key="Gallery"
               description="Instagram Photos"
               startContent={icons.scale}
-              href="/media"
+              href="/media/gallery"
             >
               Gallery
             </DropdownItem>
@@ -403,7 +403,7 @@ const Navigationbar = () => {
               key="Videos"
               description="Promos and Rush"
               startContent={icons.scale}
-              href="/brhothers"
+              href="/media/videos"
             >
               Videos
             </DropdownItem>
