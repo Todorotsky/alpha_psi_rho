@@ -16,24 +16,22 @@ export default function Home() {
       </div>
       <div className="static pb-12">
         <div className="flex justify-center py-6 sm:py-10 font-bold text-5xl">
-          <div className="text-4xl sm:text-[4vw]">
+          <h2 className="text-4xl sm:text-[4vw]">
             What We Offer <br />
-          </div>
+          </h2>
         </div>
         <div className="flex flex-wrap sm:justify-center">
-          <div className="bg-gray-200 w-full sm:w-[33%] h-[30%] m-4 flex justify-center">
-            <div className="text-center font-bold text-2xl sm:text-[1.9vw] pt-7">
+          <div className="bg-gray-200 w-full sm:w-[28%] m-4 flex justify-center flex-grow">
+            <div className="text-center font-bold text-2xl sm:text-[1.7vw] pt-7">
               Academics
               <div className="pt-2 flex space-evenly justify-center">
-                <Image
-                  className="mr-4"
+                <img
+                  className="mr-4 w-[21%]"
                   src="/academics.svg"
-                  width={75}
-                  height={75}
                   alt="Academics Written in Tagalog"
                 />
-                <Image
-                  className="ml-4"
+                <img
+                  className="ml-4 w-[21%]"
                   src="/academic_2.svg"
                   width={75}
                   height={75}
@@ -47,22 +45,18 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="bg-gray-200 w-full sm:w-[33%] h-[30%] m-4 flex justify-center ">
-            <div className="text-center font-bold text-2xl sm:text-[1.9vw] pt-7">
+          <div className="bg-gray-200 w-full sm:w-[28%] m-4 flex justify-center flex-grow">
+            <div className="text-center font-bold text-2xl sm:text-[1.7vw] pt-7">
               Brotherhood
               <div className="pt-2 flex space-evenly justify-center">
-                <Image
-                  className="mr-4"
+                <img
+                  className="mr-4 w-[21%]"
                   src="/brotherhood.svg"
-                  width={75}
-                  height={75}
                   alt="Brotherhood Written in Japanese"
                 />
-                <Image
-                  className="sm:ml-4"
+                <img
+                  className="sm:ml-4 w-[21%]"
                   src="/brotherhood_2.svg"
-                  width={75}
-                  height={75}
                   alt="Brotherhood Graphic"
                 />
               </div>
@@ -73,26 +67,22 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="bg-gray-200 w-full sm:w-[33%] h-[30%] m-4 flex justify-center">
-            <div className="text-center font-bold text-2xl sm:text-[1.9vw] pt-7">
+          <div className="bg-gray-200 w-full sm:w-[28%] m-4 flex justify-center flex-grow">
+            <div className="text-center font-bold text-2xl sm:text-[1.7vw] pt-7">
               Prosperity and Strength
               <div className="pt-2 flex space-evenly justify-center">
-                <Image
-                  className="mr-4"
+                <img
+                  className="mr-4 w-[21%]"
                   src="/prosperity.svg"
-                  width={75}
-                  height={75}
                   alt="Prosperity Written in Korean"
                 />
-                <Image
-                  className="ml-4"
+                <img
+                  className="ml-4 w-[21%]"
                   src="/strength.svg"
-                  width={70}
-                  height={70}
                   alt="Strength Written in Mandarin"
                 />
               </div>
-              <div className="font-normal text-base py-4 px-1 overflow-auto">
+              <div className="font-normal text-base py-4 px-1 overflow-auto text-center">
                 • Challenge yourself to step out of your comfort zone, explore
                 new interests, and discover your potential in a supportive and
                 empowering environment.
