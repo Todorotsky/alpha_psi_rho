@@ -1,4 +1,4 @@
 const MediaPage = () => {
-	return <div>MediaPage</div>;
+  return <div>GalleryPage</div>;
 };
 export default MediaPage;

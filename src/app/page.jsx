@@ -2,6 +2,7 @@ import ImageWithOverlay from "../components/ImageWithOverlay";
 import ImageWithOverlay2 from "../components/ImageWithOverlay2";
 import Image from "next/image";
 import { Link, Button } from "@nextui-org/react";
+
 export default function Home() {
   return (
     <main className="w-full sm:w-[72%] mx-auto">
