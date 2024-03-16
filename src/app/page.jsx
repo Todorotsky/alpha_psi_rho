@@ -144,12 +144,45 @@ export default function Home() {
         </div>
 
         <div className="hidden sm:block">
-          <div>
+          <div className="flex space-between">
             <video className="w-[45%] h-[30%] pl-[6vb]" controls>
               <source src="/spring2024_rush.mp4" type="video/mp4"></source>
             </video>
+            <div></div>
+            <div className="pl-20 flex text-center flex-col">
+              <h2 className="text-6xl font-bold pb-10 pr-10">
+                Who We Are
+                <br />
+              </h2>
+              <div className="pr-10 text-3xl text-left">
+                <p>
+                  Alpha Psi Rho (ΑΨΡ, also known as APsiRho) is an Asian/Pacific
+                  Islander-Interest Fraternity. Alpha Psi Rho is a part of the
+                  Multicultural Greek Council at UNLV. Although we are an
+                  Asian-Pacific Islander Interest Fraternity, we are all
+                  inclusive.
+                </p>
+                <p className="pt-20">
+                  Click the button below to view a powerpoint presentation to
+                  learn what this fraternity is about. APSiRho 101 covers both
+                  the business and social aspects of what it means to be a part
+                  of Alpha Psi Rho.
+                </p>
+                <div className="pt-20 text-center">
+                  <Button
+                    as={Link}
+                    className="text-2xl font-bold w-[70%]"
+                    color="primary"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeE7k9E0oweC9APcmSWvnFHIo9nQ2WiD0H3aYQRySa7lg3ATw/viewform"
+                    variant="flat"
+                    style={{ backgroundColor: "#FFD700", color: "black" }}
+                  >
+                    APSIRHO101
+                  </Button>
+                </div>
+              </div>
+            </div>
           </div>
-          Who We Are
         </div>
       </div>
       <div className="py-6">
